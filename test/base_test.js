@@ -19,6 +19,26 @@ var config = {
 
     SMS_MOBILE_NUMBER: '',
     SMS_MESSAGE: 'Message from LP/Node/SDK',
+
+    PAYMENT_ACCOUNT_TYPE_MOBILE: 1,
+    PAYMENT_ACCOUNT_NAME: '',
+    PAYMENT_ACCOUNT_ADMIN: '',
+
+    WITHDRAWAL_ACCOUNT_TYPE: 1,
+    WITHDRAWAL_ACCOUNT_NAME: '',
+    WITHDRAWAL_ACCOUNT_NUMBER: '',
+    WITHDRAWAL_ACCOUNT_BANK_NAME: 'Bank of Lipisha',
+    WITHDRAWAL_ACCOUNT_BANK_BRANCH: 'HQ',
+    WITHDRAWAL_ACCOUNT_BANK_ADDRESS: 'HQ001, Lipa Street, 99999',
+    WITHDRAWAL_ACCOUNT_SWIFT_CODE: 'LPSHKENXXX',
+    WITHDRAWAL_ACCOUNT_MANAGER: '',
+
+    USER_NAMES: '',
+    USER_ROLE: '',
+    USER_MOBILE: '',
+    USER_EMAIL: '',
+    USER_LOGIN: '',
+    USER_PASSWORD: '',
 }
 
 var lipisha = new lipisha.Lipisha(config.apiKey, config.apiSignature, config.environment);
