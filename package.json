@@ -1,0 +1,28 @@
+{
+  "name": "lipisha",
+  "version": "1.0.0",
+  "description": "Lipisha Payments SDK",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test/all_tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lipisha/lipisha-node-sdk.git"
+  },
+  "keywords": [
+    "Lipisha",
+    "Mobile",
+    "MPESA",
+    "Airtel",
+    "Payments",
+    "Kenya",
+    "Africa"
+  ],
+  "author": "Lipisha Consortium Limited <api@lipisha.com> (http://developer.lipisha.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lipisha/lipisha-node-sdk/issues"
+  },
+  "homepage": "https://github.com/lipisha/lipisha-node-sdk"
+}
