@@ -39,6 +39,11 @@ var config = {
     USER_EMAIL: '',
     USER_LOGIN: '',
     USER_PASSWORD: '',
+
+    STATUS_CONFIRMED: 'Completed',
+    TRANSACTION_ID_CONFIRM: '',
+    TRANSACTION_ID_REVERSE: '',
+
 }
 
 var lipisha = new lipisha.Lipisha(config.apiKey, config.apiSignature, config.environment);
