@@ -7,6 +7,18 @@ var config = {
     SUCCESS: 'SUCCESS',
     FAILURE: 'FAIL',
     FLOAT_ACCOUNT: '',
+
+    PAYOUT_ACCOUNT: '',
+    PAYOUT_AMOUNT: 0,
+    PAYOUT_MOBILE_NUMBER: '',
+
+    AIRTIME_ACCOUNT: '',
+    AIRTIME_AMOUNT: 0,
+    AIRTIME_MOBILE_NUMBER: '',
+    AIRTIME_NETWORK: '',
+
+    SMS_MOBILE_NUMBER: '',
+    SMS_MESSAGE: 'Message from LP/Node/SDK',
 }
 
 var lipisha = new lipisha.Lipisha(config.apiKey, config.apiSignature, config.environment);
