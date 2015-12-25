@@ -20,7 +20,7 @@ describe('Balance', function() {
         it('should get float without error', function(done) {
             if (!config.FLOAT_ACCOUNT) {
                  it('skip test - missing parameters', function() {});
-                 done();
+                 return done();
             };
             base.client.get_float(config.FLOAT_ACCOUNT, function(err, response) {
                 if (err) throw err;

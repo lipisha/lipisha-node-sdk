@@ -10,7 +10,7 @@ describe('Transactions', function() {
         it('should confirm transaction without error', function(done) {
             if (!config.TRANSACTION_ID_CONFIRM) {
                 it('skip test - missing parameters', function () {});
-                done();
+                return done();
             }
             base.client.confirm_transaction(config.TRANSACTION_ID_CONFIRM, function(err, response) {
                 if (err) throw err;
@@ -26,7 +26,7 @@ describe('Transactions', function() {
         it('should reverse transaction without error', function(done) {
             if (!config.TRANSACTION_ID_REVERSE) {
                 it('skip test - missing parameters', function () {});
-                done();
+                return done();
             }
             base.client.reverse_transaction(config.TRANSACTION_ID_REVERSE, function(err, response) {
                 if (err) throw err;

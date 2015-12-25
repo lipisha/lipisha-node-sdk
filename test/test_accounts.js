@@ -10,7 +10,7 @@ describe('Accounts', function() {
         it('should create payment account without error', function(done) {
             if (!config.PAYMENT_ACCOUNT_NAME && !config.PAYMENT_ACCOUNT_ADMIN) {
                 it('skip test - missing parameters', function () {});
-                done();
+                return done();
             }
             base.client.create_payment_account(config.PAYMENT_ACCOUNT_TYPE_MOBILE, config.PAYMENT_ACCOUNT_NAME, config.PAYMENT_ACCOUNT_ADMIN, function(err, response) {
                 if (err) throw err;
@@ -24,7 +24,7 @@ describe('Accounts', function() {
         it('should create withdrawal account without error', function(done) {
             if (!config.WITHDRAWAL_ACCOUNT_NAME && !config.WITHDRAWAL_ACCOUNT_MANAGER) {
                  it('skip test - missing parameters', function() {});
-                 done();
+                 return done();
             };
             base.client.create_withdrawal_account(config.WITHDRAWAL_ACCOUNT_TYPE,
                                                   config.WITHDRAWAL_ACCOUNT_NAME,
@@ -47,7 +47,7 @@ describe('Accounts', function() {
         it('should create user without error', function (done) {
             if (!config.USER_NAMES && !config.USER_ROLE) {
                  it('skip test - missing parameter', function(){});
-                 done();
+                 return done();
             }
              base.client.create_user(config.USER_NAMES,
                                     config.USER_ROLE,

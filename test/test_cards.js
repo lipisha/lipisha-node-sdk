@@ -10,7 +10,7 @@ describe('Cards', function() {
         it('should authorize card transaction without error', function(done) {
             if (!config.CARD_ACCOUNT && !config.CARD_NUMBER && !config.CARD_AMOUNT) {
                 it('skip test - missing parameters', function () {});
-                done();
+                return done();
             }
             base.client.authorize_card_transaction(config.CARD_ACCOUNT,
                                                    config.CARD_NUMBER,
@@ -37,7 +37,7 @@ describe('Cards', function() {
         it('should complete card transaction without error', function(done) {
             if (!config.CARD_TX_COMPLETE_INDEX && !config.CARD_TX_COMPLETE_REF) {
                 it('skip test - missing parameters', function () {});
-                done();
+                return done();
             }
             base.client.complete_card_transaction(config.CARD_TX_COMPLETE_INDEX, config.CARD_TX_COMPLETE_REF, function(err, response) {
                 if (err) throw err;
@@ -52,7 +52,7 @@ describe('Cards', function() {
         it('should void card transaction without error', function(done) {
             if (!config.CARD_TX_VOID_INDEX && !config.CARD_TX_VOID_REF) {
                 it('skip test - missing parameters', function () {});
-                done();
+                return done();
             }
             base.client.void_card_transaction(config.CARD_TX_VOID_INDEX, config.CARD_TX_VOID_REF, function(err, response) {
                 if (err) throw err;
@@ -68,7 +68,7 @@ describe('Cards', function() {
         it('should reverse card transaction without error', function(done) {
             if (!config.CARD_TX_REVERSE_INDEX && !config.CARD_TX_REVERSE_REF) {
                 it('skip test - missing parameters', function () {});
-                done();
+                return done();
             }
             base.client.reverse_card_transaction(config.CARD_TX_REVERSE_INDEX, config.CARD_TX_REVERSE_REF, function(err, response) {
                 if (err) throw err;
