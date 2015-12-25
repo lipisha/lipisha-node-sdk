@@ -1,5 +1,4 @@
 var assert = require('assert');
-var lipisha = require('../lib/lipisha.js');
 var base = require('./base_test.js');
 
 config = base.config;
