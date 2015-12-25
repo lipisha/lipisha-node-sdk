@@ -86,13 +86,13 @@ mocha
 Run a particular test
 
 ```shell
-mocha test --grep "Pattern for test"
+mocha --grep "Pattern for test"
 ```
 
 e.g. Balance test
 
 ```shell
-mocha test --grep Balance
+mocha --grep Balance
 ```
 
 
