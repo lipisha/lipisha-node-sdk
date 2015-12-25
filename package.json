@@ -19,6 +19,9 @@
     "Kenya",
     "Africa"
   ],
+  "devDependencies": {
+      "mocha" : "2.3.4"
+  },
   "author": "Lipisha Consortium Limited <api@lipisha.com> (http://developer.lipisha.com/)",
   "license": "MIT",
   "bugs": {
