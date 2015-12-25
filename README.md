@@ -55,7 +55,7 @@ client.get_balance(function(err, response) {
 *  content: { balance: '175.4600', currency: 'KES' } }
 */
 
-client.send_money('03572', '0726539235', 200, function(err, response) { 
+client.send_money('03XXX', '07XXYYYZZZ', 200, function(err, response) { 
     if (err) {
         // handle error
     }
