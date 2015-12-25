@@ -44,6 +44,26 @@ var config = {
     TRANSACTION_ID_CONFIRM: '',
     TRANSACTION_ID_REVERSE: '',
 
+    CARD_ACCOUNT: '',
+    CARD_NUMBER: '',
+    CARD_ADDRESS1: '',
+    CARD_ADDRESS2: '',
+    CARD_EXPIRY: '',
+    CARD_NAMES: '',
+    CARD_COUNTRY: '',
+    CARD_STATE: '',
+    CARD_ZIP: '',
+    CARD_SECURITY_CODE: '',
+    CARD_AMOUNT: 0,
+    CARD_CURRENCY: '',
+
+    CARD_TX_COMPLETE_INDEX: '',
+    CARD_TX_COMPLETE_REF: '',
+    CARD_TX_REVERSE_INDEX: '',
+    CARD_TX_REVERSE_REF: '',
+    CARD_TX_VOID_INDEX: '',
+    CARD_TX_VOID_REF: '',
+
 }
 
 var lipisha = new lipisha.Lipisha(config.apiKey, config.apiSignature, config.environment);
