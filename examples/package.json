@@ -1,0 +1,15 @@
+{
+  "name": "lipisha-ipn-example",
+  "version": "0.0.1",
+  "description": "Lipisha IPN Integration Example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lipisha Consortium Limited <api@lipisha.com> (http://developer.lipisha.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "~4.13.3",
+    "body-parser": "~1.14.2"
+  }
+}
