@@ -4,7 +4,7 @@ var gulp = require('gulp');
 var plugins = require('gulp-load-plugins')();
 var paths = {
     tests: ['test/**/**.js'],
-    scripts: ['./**/**/**.js', '!./node_modules/**']
+    scripts: ['lib/**', 'test/**']
 };
 
 /**
