@@ -21,6 +21,12 @@
   ],
   "devDependencies": {
     "dotenv": "^2.0.0",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.1",
+    "gulp-load-plugins": "^1.2.2",
+    "gulp-mocha": "^2.2.0",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0",
     "mocha": "2.3.4"
   },
   "author": "Lipisha Consortium Limited <api@lipisha.com> (http://developer.lipisha.com/)",
