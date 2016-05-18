@@ -9,7 +9,7 @@
  */
 'use strict';
 require('dotenv').load();
-var lipisha = require('../lib/lipisha.js');
+var Lipisha = require('../lib/lipisha.js');
 
 var config = {
     apiKey: process.env.LIPISHA_API_KEY,
@@ -84,7 +84,7 @@ var config = {
 };
 
 
-var lipisha = new lipisha.Lipisha(config.apiKey, config.apiSignature, config.environment);
+var lipisha = new Lipisha(config.apiKey, config.apiSignature, config.environment);
 
 module.exports = {
     client: lipisha,
