@@ -20,7 +20,8 @@
     "Africa"
   ],
   "devDependencies": {
-      "mocha" : "2.3.4"
+    "dotenv": "^2.0.0",
+    "mocha": "2.3.4"
   },
   "author": "Lipisha Consortium Limited <api@lipisha.com> (http://developer.lipisha.com/)",
   "license": "MIT",

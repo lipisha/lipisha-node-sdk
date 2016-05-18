@@ -1,9 +1,19 @@
+/**
+ * - use dotenv to load .env variables
+ * - dotenv will read the .env file in the root folder
+ * - It will parse the file and inject the variables to our environment
+ * ***** sample file******
+ * LIPISHA_API_KEY=thisistheawesomelipishaapikey
+ * LIPISHA_API_SIGNATURE=thisistheawesomelipishaapikeysignatue=
+ * @type {[type]}
+ */
+require('dotenv').load();
 var lipisha = require('../lib/lipisha.js');
 
 var config = {
     apiKey: process.env.LIPISHA_API_KEY,
     apiSignature: process.env.LIPISHA_API_SIGNATURE,
-    environment:'LIVE',
+    environment: 'LIVE',
     SUCCESS: 'SUCCESS',
     FAILURE: 'FAIL',
     FLOAT_ACCOUNT: '',
@@ -28,7 +38,7 @@ var config = {
     REQUEST_MONEY_MOBILE: '',
     REQUEST_MONEY_METHOD: 'Paybill (M-Pesa)',
     REQUEST_MONEY_REFERENCE: '',
-    REQUEST_MONEY_AMOUNT:  10,
+    REQUEST_MONEY_AMOUNT: 10,
 
     WITHDRAWAL_ACCOUNT_TYPE: 1,
     WITHDRAWAL_ACCOUNT_NAME: '',
