@@ -1,7 +1,8 @@
+'use strict';
 var assert = require('assert');
 var base = require('./base_test.js');
 
-config = base.config;
+var config = base.config;
 
 
 describe('Request Money', function() {
@@ -12,17 +13,17 @@ describe('Request Money', function() {
                 it('skip test - missing parameters', function() {});
                 return done();
             }
-            base.client.request_money(config.REQUEST_MONEY_ACCOUNT,
-                                      config.REQUEST_MONEY_MOBILE,
-                                      config.REQUEST_MONEY_METHOD,
-                                      config.REQUEST_MONEY_AMOUNT,
-                                      config.REQUEST_MONEY_REFERENCE,
-                                      function(err, response) {
-                if (err) throw err;
-                assert.equal(response.status.status, config.SUCCESS);
-                done();
-            });
+            base.client.request_money(
+                config.REQUEST_MONEY_ACCOUNT,
+                config.REQUEST_MONEY_MOBILE,
+                config.REQUEST_MONEY_METHOD,
+                config.REQUEST_MONEY_AMOUNT,
+                config.REQUEST_MONEY_REFERENCE,
+                function(err, response) {
+                    if (err) throw err;
+                    assert.equal(response.status.status, config.SUCCESS);
+                    done();
+                });
         });
     });
 });
-

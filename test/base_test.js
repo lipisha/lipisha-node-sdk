@@ -7,6 +7,7 @@
  * LIPISHA_API_SIGNATURE=thisistheawesomelipishaapikeysignatue=
  * @type {[type]}
  */
+'use strict';
 require('dotenv').load();
 var lipisha = require('../lib/lipisha.js');
 
@@ -80,7 +81,8 @@ var config = {
     CARD_TX_VOID_INDEX: '',
     CARD_TX_VOID_REF: '',
 
-}
+};
+
 
 var lipisha = new lipisha.Lipisha(config.apiKey, config.apiSignature, config.environment);
 
@@ -90,4 +92,4 @@ module.exports = {
     require_var: function(v) {
         return !(!v);
     }
-}
+};
