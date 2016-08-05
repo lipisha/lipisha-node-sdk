@@ -1,6 +1,6 @@
 # Lipisha Payments Node SDK
 
-This package provides bindings for Lipisha Payments API (http://developers.lipisha.com)
+This package provides bindings for Lipisha Payments API (http://developer.lipisha.com)
 
 ## Documentation
 
