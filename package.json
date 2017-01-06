@@ -4,7 +4,7 @@
   "description": "Lipisha Payments SDK",
   "main": "index.js",
   "scripts": {
-    "test": "node ./test/all_tests.js"
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
@@ -20,12 +20,19 @@
     "Africa"
   ],
   "devDependencies": {
-      "mocha" : "2.3.4"
+    "dotenv": "^2.0.0",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.1",
+    "gulp-load-plugins": "^1.2.2",
+    "gulp-mocha": "^2.2.0",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0"
   },
   "author": "Lipisha Consortium Limited <api@lipisha.com> (http://developer.lipisha.com/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lipisha/lipisha-node-sdk/issues"
   },
-  "homepage": "https://github.com/lipisha/lipisha-node-sdk"
+  "homepage": "https://github.com/lipisha/lipisha-node-sdk",
+  "dependencies": {}
 }

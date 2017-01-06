@@ -1,9 +1,20 @@
-var lipisha = require('../lib/lipisha.js');
+/**
+ * - use dotenv to load .env variables
+ * - dotenv will read the .env file in the root folder
+ * - It will parse the file and inject the variables to our environment
+ * ***** sample file******
+ * LIPISHA_API_KEY=thisistheawesomelipishaapikey
+ * LIPISHA_API_SIGNATURE=thisistheawesomelipishaapikeysignatue=
+ * @type {[type]}
+ */
+'use strict';
+require('dotenv').load();
+var Lipisha = require('../lib/lipisha.js');
 
 var config = {
     apiKey: process.env.LIPISHA_API_KEY,
     apiSignature: process.env.LIPISHA_API_SIGNATURE,
-    environment:'LIVE',
+    environment: 'LIVE',
     SUCCESS: 'SUCCESS',
     FAILURE: 'FAIL',
     FLOAT_ACCOUNT: '',
@@ -28,7 +39,7 @@ var config = {
     REQUEST_MONEY_MOBILE: '',
     REQUEST_MONEY_METHOD: 'Paybill (M-Pesa)',
     REQUEST_MONEY_REFERENCE: '',
-    REQUEST_MONEY_AMOUNT:  10,
+    REQUEST_MONEY_AMOUNT: 10,
 
     WITHDRAWAL_ACCOUNT_TYPE: 1,
     WITHDRAWAL_ACCOUNT_NAME: '',
@@ -70,9 +81,10 @@ var config = {
     CARD_TX_VOID_INDEX: '',
     CARD_TX_VOID_REF: '',
 
-}
+};
 
-var lipisha = new lipisha.Lipisha(config.apiKey, config.apiSignature, config.environment);
+
+var lipisha = new Lipisha(config.apiKey, config.apiSignature, config.environment);
 
 module.exports = {
     client: lipisha,
@@ -80,4 +92,4 @@ module.exports = {
     require_var: function(v) {
         return !(!v);
     }
-}
+};

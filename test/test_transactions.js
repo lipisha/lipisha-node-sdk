@@ -1,7 +1,8 @@
+'use strict';
 var assert = require('assert');
 var base = require('./base_test.js');
 
-config = base.config;
+var config = base.config;
 
 
 describe('Transactions', function() {
@@ -9,7 +10,7 @@ describe('Transactions', function() {
     describe('#confirm_transaction(transaction_id, callback)', function() {
         it('should confirm transaction without error', function(done) {
             if (!config.TRANSACTION_ID_CONFIRM) {
-                it('skip test - missing parameters', function () {});
+                it('skip test - missing parameters', function() {});
                 return done();
             }
             base.client.confirm_transaction(config.TRANSACTION_ID_CONFIRM, function(err, response) {
@@ -21,11 +22,10 @@ describe('Transactions', function() {
         });
     });
 
-
     describe('#reverse_transaction(transaction_id, callback)', function() {
         it('should reverse transaction without error', function(done) {
             if (!config.TRANSACTION_ID_REVERSE) {
-                it('skip test - missing parameters', function () {});
+                it('skip test - missing parameters', function() {});
                 return done();
             }
             base.client.reverse_transaction(config.TRANSACTION_ID_REVERSE, function(err, response) {
@@ -49,4 +49,3 @@ describe('Transactions', function() {
     });
 
 });
-

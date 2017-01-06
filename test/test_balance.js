@@ -1,7 +1,8 @@
+'use strict';
 var assert = require('assert');
 var base = require('./base_test.js');
 
-config = base.config;
+var config = base.config;
 
 
 describe('Balance', function() {
@@ -19,9 +20,9 @@ describe('Balance', function() {
     describe('#get_float()', function() {
         it('should get float without error', function(done) {
             if (!config.FLOAT_ACCOUNT) {
-                 it('skip test - missing parameters', function() {});
-                 return done();
-            };
+                it('skip test - missing parameters', function() {});
+                return done();
+            }
             base.client.get_float(config.FLOAT_ACCOUNT, function(err, response) {
                 if (err) throw err;
                 assert.equal(response.status.status, config.SUCCESS);
@@ -29,6 +30,5 @@ describe('Balance', function() {
                 done();
             });
         });
-    })
+    });
 });
-
